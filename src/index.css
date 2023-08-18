@@ -14,12 +14,14 @@
   --latter-menu-color: #132D46;
   --switch-color: #5E9FA5;
   --switch-button-color: #132D46;
+  --card-menu-color: #f1fffb;
   /* FONT */
   --title-font: 'Rubik', sans-serif;
   --paragraph-font: 'Poppins', sans-serif;
 }
 
 body.darkOn {
+  --title-color: #aaead9;
   --menu-color: #132D46;
   --switch-color: #132D46;
   --switch-button-color: #5E9FA5;
@@ -27,6 +29,7 @@ body.darkOn {
   --menu-unfolded-color: #0f2437;
   --body-color: #0a1722;
   --latter-color: #5E9FA5;
+  --card-menu-color: #132D46;
 }
 
 /* ---- HARD RESET ---- */
