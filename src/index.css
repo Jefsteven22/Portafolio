@@ -1,0 +1,94 @@
+/* ---- FONTS ---- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ---- VAR ---- */
+
+:root {
+  /* COLORS */
+  --body-color: #9ff4dd;
+  --title-color: #5E9FA5;
+  --latter-color: #021301;
+  --menu-color: #5E9FA5;
+  --menu-unfolded-color: #8FC8D1;
+  --latter-menu-color: #132D46;
+  --switch-color: #5E9FA5;
+  --switch-button-color: #132D46;
+  /* FONT */
+  --title-font: 'Rubik', sans-serif;
+  --paragraph-font: 'Poppins', sans-serif;
+}
+
+body.darkOn {
+  --menu-color: #132D46;
+  --switch-color: #132D46;
+  --switch-button-color: #5E9FA5;
+  --latter-menu-color: #5E9FA5;
+  --menu-unfolded-color: #0f2437;
+}
+
+/* ---- HARD RESET ---- */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  z-index: 1;
+}
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+a{
+  display: block;
+}
+p a {
+  display: inline;
+}
+li {
+  list-style-type: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6, p, span, a {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit; 
+}
+::selection {
+  background-color: var(--menu-color);
+  color: var(--latter-menu-color);
+}
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+}
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--paragraph-font);
+  color: var(--latter-color);
+  background-color: var(--body-color);
+  line-height: 1.4em;
+}

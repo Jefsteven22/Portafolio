@@ -1,0 +1,26 @@
+.darkMode {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: var(--switch-button-color);
+}
+.darkMode__button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  aspect-ratio: 1;
+  transform: scale(.7);
+  border-radius: 50%;
+  background-color: var(--switch-color);
+  transition: left 0.3s ease-in-out;
+}
+.active {
+  background-color: var(--switch-button-color);
+}
+.active .darkMode__button {
+  left: 30px;
+  background-color: var(--switch-color);
+}
