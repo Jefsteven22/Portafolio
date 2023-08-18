@@ -61,15 +61,6 @@ const NavBar = () => {
           </li>
           <li className="navBar__types">
             <span className="navBar__value" onClick={handleClose}>
-              <Link to="/service">
-                {" "}
-                <i className="navBar__icon bx-sm bx-fw bx bx-server"></i>
-                Servicios
-              </Link>
-            </span>
-          </li>
-          <li className="navBar__types">
-            <span className="navBar__value" onClick={handleClose}>
               <Link to="/skill">
                 <i className="navBar__icon bx-sm bx-fw bx bx-shield-plus"></i>
                 Habilidades

@@ -4,7 +4,7 @@
   z-index: 10;
   left: -150vw;
   bottom: 6em;
-  height: 22em;
+  height: 20em;
   width: 15em;
   transition: left 0.5s ease-in-out;
   display: flex;
@@ -39,6 +39,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   font-family: var(--title-font);
+  z-index: 2;
 }
 .mobile-menu {
   font-size: 2rem;
@@ -89,7 +90,7 @@
 @media screen and (min-width: 375px) {
   .MenuOn {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
   }
 }

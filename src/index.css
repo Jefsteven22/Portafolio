@@ -6,7 +6,7 @@
 
 :root {
   /* COLORS */
-  --body-color: #9ff4dd;
+  --body-color: #aaead9;
   --title-color: #5E9FA5;
   --latter-color: #021301;
   --menu-color: #5E9FA5;
@@ -25,6 +25,8 @@ body.darkOn {
   --switch-button-color: #5E9FA5;
   --latter-menu-color: #5E9FA5;
   --menu-unfolded-color: #0f2437;
+  --body-color: #0a1722;
+  --latter-color: #5E9FA5;
 }
 
 /* ---- HARD RESET ---- */

@@ -1,4 +1,4 @@
-const particlesConfig = {
+const particlesDmConfig = {
   "particles": {
     "number": {
       "value": 180,
@@ -8,7 +8,7 @@ const particlesConfig = {
       }
     },
     "color": {
-      "value": "#021301"
+      "value": "#5E9FA5"
     },
     "shape": {
       "type": "polygon",
@@ -48,7 +48,7 @@ const particlesConfig = {
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#132d46",
+      "color": "#8FC8D1",
       "opacity": 0.2,
       "width": 1
     },
@@ -109,4 +109,4 @@ const particlesConfig = {
   "retina_detect": true
 }
 
-export default particlesConfig
+export default particlesDmConfig

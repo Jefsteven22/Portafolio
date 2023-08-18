@@ -1,5 +1,62 @@
 .home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
   background-color: var(--body-color);
+  padding: 0 1.5em;
+  margin-top: 4em;
+}
+.home__logo {
+  width: 17em;  
+}
+.home__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10em;
+}
+.home__titule {
+  margin: -0.5em 0 1em 0;
+  font-family: var(--title-font);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.home__animation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 16em;
+  height: 1.5em;
+  margin-bottom: 2.5em;
+  margin-top: 1em;
+  margin-left: 0.8em;
+}
+.home__animation-title {
+  font-size: 1.3rem;
+}
+.home__phrase {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  font-weight: 500;
+}
+.home__author {
+  margin-top: 1em;
+  text-align: right;
+  padding-right: 1em;
+  font-weight: 600;
+}
+.home__btn {
+  font-weight: 500;
+  background-color: var(--menu-color);
+  color: var(--switch-button-color);
+  border-radius: 0.4em;
+  padding: 0.3em 0.7em;
+  position: relative;
+  bottom: 2.5em;
+  left: -5em;
+  box-shadow: 2px 2px 6px var(--menu-unfolded-color),
+              -2px -2px 6px var(--menu-unfolded-color);
 }

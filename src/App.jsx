@@ -4,7 +4,6 @@ import './App.css'
 import HomePage from './Pages/HomePage'
 import AboutPage from './Pages/AboutPage'
 import BriefcasePage from './Pages/BriefcasePage'
-import ServicesPage from './Pages/ServicesPage'
 import SkillPage from './Pages/SkillPage'
 import ContactPage from './Pages/ContactPage'
 import NavBar from './shared/NavBar'
@@ -21,7 +20,6 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/about-us' element={<AboutPage />} />
         <Route path='/briefcase' element={<BriefcasePage />} />
-        <Route path='/service' element={<ServicesPage />} />
         <Route path='/skill' element={<SkillPage />} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='*' element={<NotFount404 />} />
