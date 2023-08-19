@@ -2,11 +2,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 2em;
+  flex-direction: column;
+  gap: 3em;
   padding: 2.5em 1.5em;
+  margin-bottom: 6em;
 }
-.skill__logo {
-  width: 10em;
-
+.skill__paragraph {
+  text-align: center;
+  font-size: 1.05rem;
+  padding: 0 1.3em;
+  
+}
+.skill__value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--title-color);
+  margin-top: 0.5em;
+  display: block;
+}
+.skill__img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.skill__img {
+  width: 6em;
+  margin: 1em;
+}
+.skill__text {
+  text-align: center;
+}
+.skill__btn {
+  background-color: var(--menu-color);
+  padding: 0.3em 0.8em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 20px 1px var(--menu-color);
+  font-weight: 500;
 }

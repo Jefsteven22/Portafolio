@@ -27,7 +27,6 @@
   justify-content: start;
   flex-direction: column;
   background-color: var(--card-menu-color);
-  color: #212121;
   height: 70%;
   bottom: 0;
   border-radius: 16px;

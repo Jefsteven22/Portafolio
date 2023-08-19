@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProjectCard from "../components/BriefcasePage/ProjectCard";
 import './styles/BriefcasePage.css'
 
@@ -59,6 +60,7 @@ const BriefcasePage = () => {
           />
         ))
       }
+      <button className="projects__btn"><Link to={'/contact'}>Contacta al Desarrollador</Link></button>
     </div>
   );
 };
