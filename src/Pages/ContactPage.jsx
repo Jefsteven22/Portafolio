@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./styles/ContactPage.css";
+import ModalForm from "../components/ContactPage/ModalForm";
 
 const ContactPage = () => {
   const form = useRef();
@@ -67,6 +68,7 @@ const ContactPage = () => {
         <textarea placeholder="Escribe tu mensaje" required rows={5} cols={30} className="field__comment" name="message" autoComplete="off" />
         <button className="contact__btn">Enviar</button>
       </form>
+      <ModalForm />
     </div>
   );
 };

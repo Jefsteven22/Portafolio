@@ -2,7 +2,7 @@
 .navBar__container {
   position: fixed;
   z-index: 10;
-  left: -150vw;
+  left: -100%;
   bottom: 6em;
   height: 20em;
   width: 15em;
