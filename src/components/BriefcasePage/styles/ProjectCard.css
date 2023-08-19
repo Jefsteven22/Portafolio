@@ -61,6 +61,8 @@
   align-items: center;
   justify-content: space-around;
   gap: 0.5em;
+  position: absolute;
+  bottom: 10px;
 }
 .card__tech {
   width: 2.5em;
@@ -80,4 +82,7 @@
   box-shadow: 0 0 20px 1px var(--menu-color);
   font-size: 0.8rem;
   font-weight: 500;
+}
+.card__link {
+  display: inline;
 }
