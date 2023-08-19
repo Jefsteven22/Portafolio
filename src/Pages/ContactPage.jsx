@@ -65,7 +65,7 @@ const ContactPage = () => {
           name="user_email"
         />
         <label className="field__label">Mensaje</label>
-        <textarea placeholder="Escribe tu mensaje" required rows={5} cols={30} className="field__comment" name="message" autoComplete="off" />
+        <textarea placeholder="Escribe tu mensaje" required rows={5} cols={15} className="field__comment" name="message" autoComplete="off" />
         <button className="contact__btn">Enviar</button>
       </form>
       <ModalForm />

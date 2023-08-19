@@ -85,12 +85,8 @@
   margin-top: 0.1em;
 }
 
-
-/* ---- Query Selectors ---- */
-@media screen and (min-width: 375px) {
-  .MenuOn {
-    position: fixed;
-    z-index: 2;
-    left: 0;
-  }
+.MenuOn {
+  position: fixed;
+  z-index: 2;
+  left: 0;
 }

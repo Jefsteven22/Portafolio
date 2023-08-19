@@ -63,7 +63,7 @@
 }
 
 .field__comment {
-  resize: none;
+  resize: horizontal;
   background-color: var(--card-menu-color);
   align-self: center;
   padding: 0.2em 1em;

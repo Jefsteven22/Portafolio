@@ -2,7 +2,7 @@
 
 const ModalForm = () => {
   return (
-    <div>ModalForm</div>
+    <div>prueba 2</div>
   )
 }
 
