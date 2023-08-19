@@ -5,7 +5,7 @@ import "./styles/ContactPage.css";
 const ContactPage = () => {
   const form = useRef();
   const sendEmail = (e) => {
-    e.preventDefault();
+    e.preventDefault();   
 
     emailjs
       .sendForm(
@@ -17,6 +17,7 @@ const ContactPage = () => {
       .then(
         (result) => {
           console.log(result.text);
+          e.target.reset()
         },
         (error) => {
           console.log(error.text);
@@ -29,7 +30,8 @@ const ContactPage = () => {
         <ul className="contact__list">
           <li className="contact__value">
             <span className="contact__value-title">Linkedin</span>
-            <span className="contact__value-info"><a className="contact__link" target="_blank" href="https://www.linkedin.com/in/jefsteven22/">Ir con un Click</a>https://www.linkedin.com/in/jefsteven22/</span>
+            <a className="contact__link" target="_blank" href="https://www.linkedin.com/in/jefsteven22/">Ir con un Click</a>
+            <span className="contact__value-info">https://www.linkedin.com/in/jefsteven22/</span>
           </li>
           <li className="contact__value">
             <span className="contact__value-title">Correo</span>
@@ -41,7 +43,8 @@ const ContactPage = () => {
           </li>
           <li className="contact__value">
             <span className="contact__value-title">WhatsApp</span>
-            <span className="contact__value-info"><a className="contact__link" target="_blank" href="https://wa.me/593987855595">Ir con un Click</a>+593 98 785 5595</span>
+            <a className="contact__link" target="_blank" href="https://wa.me/593987855595">Ir con un Click</a>
+            <span className="contact__value-info">+593 98 785 5595</span>
           </li>
         </ul>
       </div>
@@ -64,7 +67,6 @@ const ContactPage = () => {
         <textarea placeholder="Escribe tu mensaje" required rows={5} cols={30} className="field__comment" name="message" autoComplete="off" />
         <button className="contact__btn">Enviar</button>
       </form>
-      <h1>RECUERDA HACER EL MODAL PARA LOS MENSAJES DEL FORMULARIO EXITOSO</h1>
     </div>
   );
 };
