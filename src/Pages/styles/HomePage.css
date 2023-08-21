@@ -60,3 +60,31 @@
   box-shadow: 2px 2px 6px var(--menu-unfolded-color),
               -2px -2px 6px var(--menu-unfolded-color);
 }
+.home__cita {
+  max-width: 35em;
+}
+
+@media screen and (min-width:552px) {
+  .home__cita {
+    width: 25em;
+    margin-bottom: 1em;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .home {
+    padding-left: 17em;
+  }
+  .home__logo {
+    width: 20em;
+  }
+  .home__cita {
+    width: 35em;
+    font-size: 1.1rem;
+  }
+  .home__author {
+    font-size: 1.1rem;
+  }
+  .home__btn {
+    position: static  ;
+  }
+}

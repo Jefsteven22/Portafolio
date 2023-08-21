@@ -1,12 +1,20 @@
+.project__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+  margin: 3em 0 9em 0;
+}
 .projects {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 45em;
   gap: 3em;
-  padding: 2.5em 1.5em;
-  margin-bottom: 6em;
+  margin-bottom: 3em;
 }
 .projects__btn {
   font-weight: 500;
@@ -16,4 +24,15 @@
   padding: 0.3em 0.7em;
   box-shadow: 2px 2px 6px var(--menu-unfolded-color),
               -2px -2px 6px var(--menu-unfolded-color);
+  width: max-content;
+}
+
+@media screen and (min-width: 1000px) {
+  .project__container {
+    padding-left: 17em;
+    margin-bottom: 3em;
+  }
+  .projects {
+    max-width: 55em;
+  }
 }

@@ -7,7 +7,7 @@ const BriefcasePage = () => {
     {
       title: "Pokedex",
       description: "Una app web donde puedes interactuar con la información de los pokemones",
-      img: "",
+      img: "/img/projects/pokedex.jpg",
       github: "https://github.com/Jefsteven22/pokemon-app.git",
       netlify: "https://pokedex-app-steven-contreras.netlify.app/",
       technologies: [{url: '/svg/react-01.svg', id: 1}, {url: '/svg/html-01.svg', id: 2}, {url: '/svg/css-01.svg', id: 3}, {url: '/svg/js-01.svg', id: 4}],
@@ -16,7 +16,7 @@ const BriefcasePage = () => {
     {
       title: "Rick and Morty",
       description: "Una app web donde obtienes todos los personajes que aparecen en la serie dependiendo de su universo",
-      img: "",
+      img: "/img/projects/randm.jpg",
       github: "https://github.com/Jefsteven22/rick-and-morty-app.git",
       netlify: "https://rick-and-morty-app-steven-contreras.netlify.app/",
       technologies: [{url: '/svg/react-01.svg', id: 1}, {url: '/svg/html-01.svg', id: 2}, {url: '/svg/css-01.svg', id: 3}, {url: '/svg/js-01.svg', id: 4}],
@@ -25,7 +25,7 @@ const BriefcasePage = () => {
     {
       title: "User Cards",
       description: "Mini juego donde puedes crear usuarios e interactuar con las cards",
-      img: "",
+      img: "/img/projects/users-app.jpg",
       github: "https://github.com/Jefsteven22/users-cards.git",
       netlify: "https://users-cards-steven-contreras.netlify.app/",
       technologies: [{url: '/svg/react-01.svg', id: 1}, {url: '/svg/html-01.svg', id: 2}, {url: '/svg/css-01.svg', id: 3}, {url: '/svg/js-01.svg', id: 4}],
@@ -34,7 +34,7 @@ const BriefcasePage = () => {
     {
       title: "Wather app",
       description: "Una app web que te muestra el estado del clima a tiempo real, dependiendo de tu hubicación geografica",
-      img: "",
+      img: "/img/projects/clima-app.jpg",
       github: "https://github.com/Jefsteven22/weather-app.git",
       netlify: "https://weather-app-steven-contreras.netlify.app/",
       technologies: [{url: '/svg/react-01.svg', id: 1}, {url: '/svg/html-01.svg', id: 2}, {url: '/svg/css-01.svg', id: 3}, {url: '/svg/js-01.svg', id: 4}],
@@ -43,7 +43,7 @@ const BriefcasePage = () => {
     {
       title: "Ecommerce Vanilla",
       description: "Un Ecommerce creado con codigo Puro y duro (Vanilla), simulando compra, creación de usuarios, llamada a la API, etc.",
-      img: "",
+      img: "/img/projects/ecommerce-vanilla.jpg",
       github: "https://github.com/Jefsteven22/proyecto-e-commerce-vanilla.git",
       netlify: "https://ecommerce-vanila-steven-contreras.netlify.app/",
       technologies: [{url: '/svg/html-01.svg', id: 2}, {url: '/svg/css-01.svg', id: 3}, {url: '/svg/js-01.svg', id: 4}],
@@ -51,15 +51,17 @@ const BriefcasePage = () => {
     }
   ];
   return (
-    <div className="projects">
-      {
-        projects.map( project => (
-          <ProjectCard 
-            project={project}
-            key={project.id}
-          />
-        ))
-      }
+    <div className="project__container">
+      <div className="projects">
+        {
+          projects.map( project => (
+            <ProjectCard 
+              project={project}
+              key={project.id}
+            />
+          ))
+        }
+      </div>
       <button className="projects__btn"><Link to={'/contact'}>Contacta al Desarrollador</Link></button>
     </div>
   );

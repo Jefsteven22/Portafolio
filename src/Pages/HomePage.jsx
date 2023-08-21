@@ -20,7 +20,7 @@ const HomePage = () => {
       </div>
       <h2 className="home__titule">Desarrollador Frontend</h2>
       <div className="home__animation">
-        <h2 className="home__animation-title notraslate" >Habilidades {''}<span style={{color: `${darkMode ? '#aaead9': '#5E9FA5'}`, fontWeight: '600'}}><Typewriter words={text} loop={0} cursor={true} cursorStyle='|' deleteSpeed={70} cursorColor= {darkMode ? '#5E9FA5': '#021301'} /> </span></h2>
+        <h2 className="home__animation-title notraslate" >Habilidades {''}<span className="notraslate" style={{color: `${darkMode ? '#aaead9': '#5E9FA5'}`, fontWeight: '600'}}><Typewriter words={text} loop={0} cursor={true} cursorStyle='|' deleteSpeed={70} cursorColor= {darkMode ? '#5E9FA5': '#021301'} /> </span></h2>
       </div>
       <div className="home__phrase">
         <p className="home__cita">"Si algo es lo suficientemente importante, incluso si las probabilidades están en tu contra, debes seguir intentándolo".</p>

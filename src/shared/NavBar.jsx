@@ -30,11 +30,13 @@ const NavBar = () => {
     <nav className="navBar">
       <div className={`navBar__container ${menu ? "MenuOn" : ""}`}>
         <picture className="navBar__img">
-          <img
-            className="navBar__logo"
-            src="/img/logo-scl.png"
-            alt="Logo de Marca Personal"
-          />
+          <Link to={'/'}>
+            <img
+              className="navBar__logo"
+              src={darkMode ? "/img/logo-steven.png" : "/img/logo-steven-oscuro.png"}
+              alt="Logo de Marca Personal"
+            />
+          </Link>
         </picture>
         <ul className="navBar__list">
           <li className="navBar__types">

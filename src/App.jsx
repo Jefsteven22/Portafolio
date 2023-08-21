@@ -7,7 +7,6 @@ import BriefcasePage from './Pages/BriefcasePage'
 import SkillPage from './Pages/SkillPage'
 import ContactPage from './Pages/ContactPage'
 import NavBar from './shared/NavBar'
-import Footer from './shared/Footer'
 import NotFount404 from './Pages/NotFount404'
 import ParticlesBg from './shared/ParticlesBg'
 
@@ -24,7 +23,6 @@ function App() {
         <Route path='/contact' element={<ContactPage />} />
         <Route path='*' element={<NotFount404 />} />
       </Routes>
-      <Footer />
       <ParticlesBg />
     </div>
   )

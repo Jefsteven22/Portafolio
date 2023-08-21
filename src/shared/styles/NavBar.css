@@ -41,9 +41,6 @@
   font-family: var(--title-font);
   z-index: 2;
 }
-.mobile-menu {
-  font-size: 2rem;
-}
 .navBar__iso {
   height: 100%;
   width: 100%;
@@ -60,11 +57,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.svg-flag {
   width: 100%;
   height: 100%;
-  
 }
 .navBar__darkMode {
   display: flex;
@@ -84,9 +78,61 @@
   justify-content: center;
   margin-top: 0.1em;
 }
-
 .MenuOn {
   position: fixed;
   z-index: 2;
   left: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .navBar__container {
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    padding-top: 5em;
+    width: 17em;
+  }
+  .navBar__grid {
+    display: none;
+    visibility: hidden;
+  }
+  .navBar__iso-img {
+    display: none;
+    visibility: hidden;
+  }
+  .navBar__container-icons {
+    width: 17em; 
+  }
+  .navBar__darkMode {
+    position: relative;
+    left: -1.5em;
+  }
+  .navBar__icon-mobile {
+    position: relative;
+    right: -1.5em;
+  }
+  .navBar__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;   
+    height: 10em;
+    width: 10em;
+  }  
+  .navBar__logo {
+    width: 7em;
+  }
+  .navBar__list {
+    align-self: self-start;
+    display: flex;
+    gap: 2em;
+  }
+  .navBar__value {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
 }
