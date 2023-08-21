@@ -1,13 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./styles/ContactPage.css";
 import ModalForm from "../components/ContactPage/ModalForm";
 
 const ContactPage = () => {
+  const [modal, setModal] = useState(false)
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();   
-
+    setModal(false)
     emailjs
       .sendForm(
         "service_jgwf139",
@@ -17,7 +18,7 @@ const ContactPage = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setModal(true);
           e.target.reset()
         },
         (error) => {
@@ -50,6 +51,7 @@ const ContactPage = () => {
         </ul>
       </div>
       <form className="field" ref={form} onSubmit={sendEmail}>
+        <h2 className="form__title">Mandale un mensaje al Desarrollador</h2>
         <label className="field__label">Nombre Completo</label>
         <input className="field__input"
           required
@@ -68,7 +70,10 @@ const ContactPage = () => {
         <textarea placeholder="Escribe tu mensaje" required rows={5} cols={15} className="field__comment" name="message" autoComplete="off" />
         <button className="contact__btn">Enviar</button>
       </form>
-      <ModalForm />
+      <ModalForm 
+        modal={modal}
+        setModal={setModal}
+      />
     </div>
   );
 };

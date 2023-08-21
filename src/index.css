@@ -15,6 +15,7 @@
   --switch-color: #5E9FA5;
   --switch-button-color: #132D46;
   --card-menu-color: #f1fffb;
+  --color-modal: #aaead9bb;
   /* FONT */
   --title-font: 'Rubik', sans-serif;
   --paragraph-font: 'Poppins', sans-serif;
@@ -30,6 +31,7 @@ body.darkOn {
   --body-color: #0a1722;
   --latter-color: #5E9FA5;
   --card-menu-color: #132D46;
+  --color-modal: #0a1722c2;
 }
 
 /* ---- HARD RESET ---- */
