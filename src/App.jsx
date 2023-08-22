@@ -9,11 +9,13 @@ import ContactPage from './Pages/ContactPage'
 import NavBar from './shared/NavBar'
 import NotFount404 from './Pages/NotFount404'
 import ParticlesBg from './shared/ParticlesBg'
+import Loader from './shared/Loader'
 
 function App() {
 
   return (
     <div>
+      <Loader />
       <NavBar />
       <Routes>
         <Route path='/' element={<HomePage />} />
