@@ -1,0 +1,88 @@
+{
+  "navBar": {
+    "home": "inicio",
+    "about": "Sobre Mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contactos",
+    "downloadCv": "Descargar CV"
+  },
+  "homePage": {
+    "title": "Desarrollador Frontend",
+    "skills": "Habilidades",
+    "phrase": "Si algo es lo suficientemente importante, incluso si las probabilidades están en tu contra, debes seguir intentándolo",
+    "author": "Elon Musk",
+    "btn" : "Contactame"
+  },
+  "aboutPage": {    
+    "title": "Desarrollador Frontend",
+    "p1": "Soy un pasionado de la programación, con experiencia en la creación de aplicaciones web.",
+    "p2": "Estoy especializado en tecnologias como HTML5, CSS3, JavaScript y en Libreias como React.",
+    "goals": {
+      "title": "Objetivos",
+      "p1": "Mi objetivo principal es crear soluciones innovadoras que mejoren la experiencia del usuario y optimicen los procesos empresariales.",
+      "p2": "Trabajar en proyectos desafiantes que me permitan utilizar mis conocimientos para sastifacer la experiencia del usuario."
+    },
+    "about-ability": {
+      "title": "Habilidades Blandas",
+      "li1": "Formación autodidacta continua",
+      "li2": "Exigencia autocrítica",
+      "li3": "Liderazgo",
+      "li4": "Trabajo en equipo",
+      "li5": "Trabajo bajo presión",
+      "li6": "Manejo de estrés",
+      "li7": "Resolución de problemas"
+    },
+    "btn": "Información de Contacto"
+  },
+  "projectPage": {
+    "descriptions": {
+      "pokedex": "Una app web donde puedes interactuar con la información de los pokemones",
+      "rickAndMorty": "Una app web donde obtienes todos los personajes que aparecen en la serie dependiendo de su universo",
+      "userCards": "Mini juego donde puedes crear usuarios e interactuar con las cartas de usuarios",
+      "watherApp": "Una app web que te muestra el estado del clima a tiempo real, dependiendo de tu hubicación geografica",
+      "ecommerceVanilla": "Un Ecommerce creado con codigo Puro y duro (Vanilla), simulando compra, creación de usuarios, llamada a la API, etc."
+    },
+    "cards": {
+      "btn": {
+        "open": "Abrir",
+        "code": "Codigo"
+      }
+    },
+    "btn": "Contacta al Desarrollador"
+  },
+  "skillPage": {
+    "title": "Cuento con experiencia en",
+    "p": "Estas habilidades me permiten crear interfaces web atractivas, desarrollar aplicaciones completas, colaborar eficientemente en proyectos utilizando control de versiones con Github.",
+    "btn": "Hagamos un proyecto juntos"
+  },
+  "ContactPage": {
+    "contact": {
+      "linkedin": {
+        "link": "Ir con un click"
+      },
+      "email": {
+        "title": "Correo"
+      },
+      "whatsapp": {
+        "link": "Ir con un click"
+      }
+    },
+    "form": {
+      "title": "Mandale un mensaje al Desarrollador",
+      "name": {
+        "title": "Nombre Completo",
+        "imput": "Nombre y Apellido"
+      },
+      "email": {
+        "title": "Correo",
+        "imput": "correo@mail.com"
+      },
+      "sms": {
+        "title": "Mensaje",
+        "imput": "Escribe tu mensaje"
+      },
+      "btn": "Enviar"
+    }
+  }
+}

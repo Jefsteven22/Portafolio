@@ -6,12 +6,16 @@ import { useDispatch } from "react-redux";
 import DarkMode from "../components/NavBar/DarkMode";
 import { useState } from "react";
 import GridMenu from "../components/NavBar/GridMenu";
+import { useTranslation } from "react-i18next";
+import i18next from "../services/config/translation.config";
 
 const NavBar = () => {
   const [isSpanish, setIsSpanish] = useState(true);
   const menu = useSelector((reducer) => reducer.menu);
   const darkMode = useSelector((reducer) => reducer.darkMode);
   const dispatch = useDispatch();
+  const {t} = useTranslation()
+  
  
   const handleClose = () => {
     dispatch(setMenuG(false));
@@ -20,8 +24,10 @@ const NavBar = () => {
   const handleLanguage = () => {
     if (isSpanish) {
       setIsSpanish(false);
+      i18next.changeLanguage('en')
     } else {
       setIsSpanish(true);
+      i18next.changeLanguage('es')
     }
   };
 
@@ -42,14 +48,14 @@ const NavBar = () => {
           <li className="navBar__types">
             <span className="navBar__value" onClick={handleClose}>
               <Link to="/">
-                <i className="navBar__icon bx-sm bx-fw bx bx-home"></i>Inicio
+                <i className="navBar__icon bx-sm bx-fw bx bx-home"></i>{t('navBar.home')}
               </Link>
             </span>
           </li>
           <li className="navBar__types">
             <span className="navBar__value" onClick={handleClose}>
               <Link to="/about-us">
-                <i className="navBar__icon bx-sm bx-fw  bx bx-user"></i>Sobre Mí
+                <i className="navBar__icon bx-sm bx-fw  bx bx-user"></i>{t('navBar.about')}
               </Link>
             </span>
           </li>
@@ -57,7 +63,7 @@ const NavBar = () => {
             <span className="navBar__value" onClick={handleClose}>
               <Link to="/briefcase">
                 <i className="navBar__icon bx-sm bx-fw bx bx-briefcase"></i>
-                Proyectos
+                {t('navBar.projects')}
               </Link>
             </span>
           </li>
@@ -65,7 +71,7 @@ const NavBar = () => {
             <span className="navBar__value" onClick={handleClose}>
               <Link to="/skill">
                 <i className="navBar__icon bx-sm bx-fw bx bx-shield-plus"></i>
-                Habilidades
+                {t('navBar.skills')}
               </Link>
             </span>
           </li>
@@ -73,7 +79,7 @@ const NavBar = () => {
             <span className="navBar__value" onClick={handleClose}>
               <Link to="/contact">
                 <i className="navBar__icon bx-sm bx-fw bx bx-envelope"></i>
-                Contactos
+                {t('navBar.contact')}
               </Link>
             </span>
           </li>
@@ -81,7 +87,7 @@ const NavBar = () => {
             <span className="navBar__value" onClick={handleClose}>
               <a href="/documents/HF_CV_Steven_Contreras.pdf" download={""}>
                 <i className="navBar__icon bx-sm bx-fw bx bx-cloud-download"></i>
-                Descargar CV
+                {t('navBar.downloadCv')}
               </a>
             </span>
           </li>

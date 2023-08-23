@@ -71,8 +71,15 @@ h1, h2, h3, h4, h5, h6, p, span, a {
   color: inherit; 
 }
 ::selection {
-  background-color: var(--menu-color);
-  color: var(--latter-menu-color);
+  background-color: var(--latter-menu-color);
+  color: var(--menu-unfolded-color);
+}
+::-webkit-scrollbar {
+  background: var(--menu-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--switch-button-color);
 }
 form, input, textarea, select, button, label {
   font-family: inherit;

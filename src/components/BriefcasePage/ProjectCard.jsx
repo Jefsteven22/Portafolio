@@ -1,15 +1,17 @@
+import { useTranslation } from 'react-i18next'
 import './styles/ProjectCard.css'
 
 const ProjectCard = ({ project }) => {
 
+  const {t} = useTranslation()
 
   return (
     <div className='card__container'>
       <div className="card">
         <div className="card-image">
           <div className='card__btn-container'>
-            <button className="card__btn"><i className='bx bxl-gitlab'></i><a className='card__link' target='_blank' href={project.github}> Codigo</a></button>
-            <button className="card__btn"><i className='bx bxl-netlify'></i><a className='card__link' target='_blank' href={project.netlify}> Abrir</a></button>
+            <button className="card__btn"><i className='bx bxl-gitlab'></i><a className='card__link' target='_blank' href={project.github}> {t('projectPage.cards.btn.code')}</a></button>
+            <button className="card__btn"><i className='bx bxl-netlify'></i><a className='card__link' target='_blank' href={project.netlify}> {t('projectPage.cards.btn.open')}</a></button>
             <img className='card__img' src={project.img} alt="imagen del proyecto" />
           </div>
         </div>

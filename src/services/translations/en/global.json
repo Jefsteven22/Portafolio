@@ -1,0 +1,88 @@
+{
+  "navBar": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contacts",
+    "downloadCv": "Download CV"
+  },
+  "homePage": {
+    "title": "Frontend Developer",
+    "skills": "Skills",
+    "phrase": "If something is important enough, even if the odds are against you, you should keep trying.",
+    "author": "Elon Musk",
+    "btn" : "Contact me"
+  },
+  "aboutPage": {
+    "title": "Frontend Developer",
+    "p1": "I am passionate about programming, with experience in creating web applications.",
+    "p2": "I am specialized in technologies like HTML5, CSS3, JavaScript and Libraries like React.",
+    "goals": {
+      "title": "Goals",
+      "p1": "My main goal is to create innovative solutions that improve the user experience and optimize business processes.",
+      "p2": "Work on challenging projects that allow me to use my knowledge to satisfy the user experience."
+    },
+    "about-ability": {
+      "title": "Soft skills",
+      "li1": "Continuous self-taught training",
+      "li2": "self-critical requirement",
+      "li3": "Leadership",
+      "li4": "Teamwork",
+      "li5": "I work under pressure",
+      "li6": "Stress management",
+      "li7": "Problem resolution"
+    },
+    "btn": "Contact information"
+  },
+  "projectPage": {
+    "descriptions": {
+      "pokedex": "A web app where you can interact with the information of the pokemons",
+      "rickAndMorty": "A web app where you get all the characters that appear in the series depending on their universe",
+      "userCards": "Mini game where you can create users and interact with user cards",
+      "watherApp": "A web app that shows you the weather status in real time, depending on your geographical location",
+      "ecommerceVanilla": "An Ecommerce created with Pure and hard code (Vanilla), simulating purchase, user creation, API call, etc."
+    },
+    "cards": {
+      "btn": {
+        "open": "Open",
+        "code": "Code"
+      }
+    },
+    "btn": "Contact the Developer"
+  },
+  "skillPage": {
+    "title": "I have experience in",
+    "p": "These skills allow me to create attractive web interfaces, develop complete applications, efficiently collaborate on projects using version control with Github.",
+    "btn": "let's do a project together"
+  },
+  "ContactPage": {
+    "contact": {
+      "linkedin": {
+        "link": "Go with a click"
+      },
+      "email": {
+        "title": "Email"
+      },
+      "whatsapp": {
+        "link": "Go with a click"
+      }
+    },
+    "form": {
+      "title": "Send a message to the Developer",
+      "name": {
+        "title": "Full Name",
+        "imput": "Name and Surname"
+      },
+      "email": {
+        "title": "email",
+        "imput": "email@mail.com"
+      },
+      "sms": {
+        "title": "Message",
+        "imput": "Write your message"
+      },
+      "btn": "Send"
+    }
+  }
+}

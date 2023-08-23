@@ -11,7 +11,6 @@ const Loader = () => {
     dispatch(setIsLoadingG(false))  
   })
 
-
   return (
     <div className={`loader ${isLoading ? '' : 'loaderOff'}`}>
       

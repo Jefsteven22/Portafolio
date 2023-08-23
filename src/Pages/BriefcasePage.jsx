@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import ProjectCard from "../components/BriefcasePage/ProjectCard";
 import './styles/BriefcasePage.css'
+import { useTranslation } from "react-i18next";
 
 const BriefcasePage = () => {
+
+  const {t} = useTranslation()
+
   const projects = [
     {
       title: "Pokedex",
-      description: "Una app web donde puedes interactuar con la información de los pokemones",
+      description: `${t('projectPage.descriptions.pokedex')}`,
       img: "/img/projects/pokedex.jpg",
       github: "https://github.com/Jefsteven22/pokemon-app.git",
       netlify: "https://pokedex-app-steven-contreras.netlify.app/",
@@ -15,7 +19,7 @@ const BriefcasePage = () => {
     },
     {
       title: "Rick and Morty",
-      description: "Una app web donde obtienes todos los personajes que aparecen en la serie dependiendo de su universo",
+      description: `${t('projectPage.descriptions.rickAndMorty')}`,
       img: "/img/projects/randm.jpg",
       github: "https://github.com/Jefsteven22/rick-and-morty-app.git",
       netlify: "https://rick-and-morty-app-steven-contreras.netlify.app/",
@@ -24,7 +28,7 @@ const BriefcasePage = () => {
     },
     {
       title: "User Cards",
-      description: "Mini juego donde puedes crear usuarios e interactuar con las cards",
+      description: `${t('projectPage.descriptions.userCards')}`,
       img: "/img/projects/users-app.jpg",
       github: "https://github.com/Jefsteven22/users-cards.git",
       netlify: "https://users-cards-steven-contreras.netlify.app/",
@@ -33,7 +37,7 @@ const BriefcasePage = () => {
     },
     {
       title: "Wather app",
-      description: "Una app web que te muestra el estado del clima a tiempo real, dependiendo de tu hubicación geografica",
+      description: `${t('projectPage.descriptions.watherApp')}`,
       img: "/img/projects/clima-app.jpg",
       github: "https://github.com/Jefsteven22/weather-app.git",
       netlify: "https://weather-app-steven-contreras.netlify.app/",
@@ -42,7 +46,7 @@ const BriefcasePage = () => {
     },
     {
       title: "Ecommerce Vanilla",
-      description: "Un Ecommerce creado con codigo Puro y duro (Vanilla), simulando compra, creación de usuarios, llamada a la API, etc.",
+      description: `${t('projectPage.descriptions.ecommerceVanilla')}`,
       img: "/img/projects/ecommerce-vanilla.jpg",
       github: "https://github.com/Jefsteven22/proyecto-e-commerce-vanilla.git",
       netlify: "https://ecommerce-vanila-steven-contreras.netlify.app/",
@@ -62,7 +66,7 @@ const BriefcasePage = () => {
           ))
         }
       </div>
-      <button className="projects__btn"><Link to={'/contact'}>Contacta al Desarrollador</Link></button>
+      <button className="projects__btn"><Link to={'/contact'}>{t('projectPage.btn')}</Link></button>
     </div>
   );
 };
