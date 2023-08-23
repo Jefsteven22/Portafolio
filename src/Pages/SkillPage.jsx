@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import "./styles/SkillPage.css";
 import { useTranslation } from "react-i18next";
+import { setMenuG } from "../store/slices/menu.slice";
+import { useDispatch } from "react-redux";
 
 const SkillPage = () => {
 
   const {t} = useTranslation()
+  const dispatch = useDispatch();
 
   const skillInfo = [
     { url: "/svg/react-01.svg", 
@@ -21,8 +24,12 @@ const SkillPage = () => {
     },
   ];
 
+  const handleClose = () => {
+    dispatch(setMenuG(false));
+  };
+
   return (
-    <div className="skill">
+    <div onClick={handleClose} className="skill">
       <p className="skill__paragraph">{t('skillPage.title')} <span className="skill__value">HTML, CSS, javascript, React.</span></p>
       <div className="skill__img-container">
         {

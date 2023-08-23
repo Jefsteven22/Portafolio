@@ -1,16 +1,19 @@
 import './styles/Loader.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { setIsLoadingG } from '../store/slices/loading.slice'
+import { useEffect } from 'react'
 
 const Loader = () => {
 
   const isLoading = useSelector(reducer => reducer.isLoading)
   const dispatch = useDispatch()
 
-  window.addEventListener('load', function () {
-    dispatch(setIsLoadingG(false))  
-  })
-
+  useEffect(() => {
+    setTimeout(() => {
+      dispatch(setIsLoadingG(false))
+    }, 300);
+  }, [isLoading])
+  
   return (
     <div className={`loader ${isLoading ? '' : 'loaderOff'}`}>
       

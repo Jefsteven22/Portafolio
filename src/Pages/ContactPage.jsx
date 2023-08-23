@@ -3,8 +3,11 @@ import emailjs from "@emailjs/browser";
 import "./styles/ContactPage.css";
 import ModalForm from "../components/ContactPage/ModalForm";
 import { useTranslation } from "react-i18next";
+import { setMenuG } from "../store/slices/menu.slice";
+import { useDispatch } from "react-redux";
 
 const ContactPage = () => {
+  const dispatch = useDispatch();
   const {t} = useTranslation()
   const [modal, setModal] = useState(false)
   const form = useRef();
@@ -28,8 +31,13 @@ const ContactPage = () => {
         }
       );
   };
+
+  const handleClose = () => {
+    dispatch(setMenuG(false));
+  };
+
   return (
-    <div className="contact">
+    <div onClick={handleClose} className="contact">
       <div className="contact__container">
         <ul className="contact__list">
           <li className="contact__value">

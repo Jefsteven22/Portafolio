@@ -1,9 +1,13 @@
+import { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 
 
 const NotFount404 = () => {
-  return (
-    <div>NotFount404</div>
-  )
+  const navigate = useNavigate()
+  
+  useEffect(() => {
+    navigate('/')
+  }, [])
 }
 
 export default NotFount404

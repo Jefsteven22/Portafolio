@@ -1,13 +1,20 @@
 import { Link } from 'react-router-dom'
 import './styles/AboutPage.css'
 import { useTranslation } from 'react-i18next'
+import { setMenuG } from '../store/slices/menu.slice'
+import { useDispatch } from 'react-redux'
 
 const AboutPage = () => {
   
   const {t} = useTranslation()
+  const dispatch = useDispatch();
+
+  const handleClose = () => {
+    dispatch(setMenuG(false));
+  };
 
   return (
-    <article className='about'>
+    <article className='about' onClick={handleClose}>
       <div className='about__header'>
         <h1 className='about__title'>Steven Contreras</h1>
         <h2 className='about__titule'>{t('aboutPage.title')}</h2>

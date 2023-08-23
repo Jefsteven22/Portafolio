@@ -2,10 +2,13 @@ import { Link } from "react-router-dom";
 import ProjectCard from "../components/BriefcasePage/ProjectCard";
 import './styles/BriefcasePage.css'
 import { useTranslation } from "react-i18next";
+import { setMenuG } from "../store/slices/menu.slice";
+import { useDispatch } from "react-redux";
 
 const BriefcasePage = () => {
 
   const {t} = useTranslation()
+  const dispatch = useDispatch();
 
   const projects = [
     {
@@ -54,8 +57,13 @@ const BriefcasePage = () => {
       id: 5
     }
   ];
+
+  const handleClose = () => {
+    dispatch(setMenuG(false));
+  };
+
   return (
-    <div className="project__container">
+    <div onClick={handleClose} className="project__container">
       <div className="projects">
         {
           projects.map( project => (
