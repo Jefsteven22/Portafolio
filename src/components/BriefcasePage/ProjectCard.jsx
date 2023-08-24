@@ -10,8 +10,8 @@ const ProjectCard = ({ project }) => {
       <div className="card">
         <div className="card-image">
           <div className='card__btn-container'>
-            <button className="card__btn"><i className='bx bxl-gitlab'></i><a className='card__link' target='_blank' href={project.github}> {t('projectPage.cards.btn.code')}</a></button>
-            <button className="card__btn"><i className='bx bxl-netlify'></i><a className='card__link' target='_blank' href={project.netlify}> {t('projectPage.cards.btn.open')}</a></button>
+            <button className="card__btn"><a className='card__link' target='_blank' href={project.github}><i className='bx bxl-gitlab'></i> {t('projectPage.cards.btn.code')}</a></button>
+            <button className="card__btn"><a className='card__link' target='_blank' href={project.netlify}> <i className='bx bxl-netlify'></i> {t('projectPage.cards.btn.open')}</a></button>
             <img className='card__img' src={project.img} alt="imagen del proyecto" />
           </div>
         </div>
