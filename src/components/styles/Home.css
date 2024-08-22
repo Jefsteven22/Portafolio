@@ -1,0 +1,23 @@
+.home {
+  position: relative;
+  height: calc(100vh - 5rem);
+}
+.home__color {
+  position: absolute;
+  background-color: var(--color-header);
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.home__video {
+  height: calc(100vh - 5rem);
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .home {
+    height: 100vh;
+  }
+  .home__video {
+    height: 100vh;
+  }
+}

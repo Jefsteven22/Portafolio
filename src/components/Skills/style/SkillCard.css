@@ -1,0 +1,402 @@
+.skillCard {
+  min-height: 65vh;
+  width: 100%;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  card 1 */
+.skillCard__more > h3 {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+.skillCard__carousel-item-1 {
+  background: linear-gradient(180deg, #fd0404 0%, #590101 100%);
+  width: 14rem;
+  height: 24rem;
+  border-radius: 90px 30px 30px 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.389);
+  animation: floatAnimation 3s ease-in-out infinite alternate;
+}
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.skillCard__more {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.skillCard__more {
+  text-shadow: 0px 8px 9px rgba(0, 0, 0, 0.677);
+}
+.skillCard__more-title {
+  font-size: 0.8rem;
+  font-family: var(--typo-secondary);
+  margin-bottom: 1.5rem;
+  text-shadow: 0px 5px 9px rgba(0, 0, 0, 0.559);
+  padding: 0.3rem 0;
+  border-bottom: 5px solid var(--color-bg-skills);
+  box-shadow: 0 8px 5px -7px rgba(0, 0, 0, 0.3);
+}
+.logo-react {
+  width: 3rem;
+  filter: drop-shadow(0 0 10px rgba(40, 40, 40, 0.73));
+}
+.skillCard__less {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.skillCard__less-title {
+  font-size: 0.8rem;
+  font-family: var(--typo-secondary);
+  margin: 1.5rem 0;
+  text-shadow: 0px 5px 9px rgba(0, 0, 0, 0.559);
+  border-bottom: 5px solid var(--color-bg-skills);
+  padding: 0.3rem 0;
+  box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.3);
+}
+.skillCard__list-less {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.skillCard__list-lessItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.skillCard__list-lessItem > h3 {
+  margin-bottom: 1rem;
+  text-shadow: 0px 8px 9px rgba(0, 0, 0, 0.677);
+  font-size: 0.9rem;
+}
+
+/* card 2 */
+
+.skillCard__carousel-item-2 {
+  background: linear-gradient(180deg, #ff0000 0%, #b56200 100%);
+  width: 14rem;
+  height: 24rem;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.389);
+  animation: floatAnimation2 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatAnimation2 {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+.skillCard__lenMore {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+}
+.skillCard__lenMore-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 5rem;
+  width: 5rem;
+  margin: 0.8rem;
+}
+.skillCard__lenMore-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.skillCard__lenMore-title {
+  font-size: 1rem;
+  font-family: var(--typo-secondary);
+  margin: 1rem 0 1.5rem 0;
+  text-shadow: 0px 5px 9px rgba(0, 0, 0, 0.559);
+  border-bottom: 5px solid var(--color-bg-skills);
+  padding: 0.3rem 0;
+  box-shadow: 0 8px 5px -7px rgba(0, 0, 0, 0.3);
+}
+.skillCard__lenMore-logo {
+  width: 2.5rem;
+  filter: drop-shadow(0 0 10px rgba(40, 40, 40, 0.73));
+}
+.logo-html {
+  width: 4rem;
+  margin-top: -0.2rem;
+}
+.skillCard__lenMore-itemTitle {
+  text-shadow: 0px 5px 9px rgba(0, 0, 0, 0.559);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/* card 3 */
+
+.skillCard__carousel-item-3 {
+  background: linear-gradient(180deg, #fd0404 0%, #590101 100%);
+  width: 14rem;
+  height: 24rem;
+  border-radius: 30px 90px 30px 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.389);
+  animation: floatAnimation3 3s ease-in-out infinite alternate;
+}
+@keyframes floatAnimation3 {
+  0% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-13px);
+  }
+}
+.skillCard__hability-title {
+  font-size: 0.8rem;
+  font-family: var(--typo-secondary);
+  margin: 1.5rem 0;
+  text-shadow: 0px 5px 9px rgba(0, 0, 0, 0.559);
+  border-bottom: 5px solid var(--color-bg-skills);
+  padding: 0.3rem 0;
+  box-shadow: 0 8px 5px -7px rgba(0, 0, 0, 0.3);
+  margin: 0 2rem;
+  text-align: center;
+}
+.skillCard__hability-list {
+  width: 100%;
+  height: 15rem;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.skillCard__hability-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-shadow: 0px 5px 9px rgba(0, 0, 0, 0.559);
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+/* carousel */
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 65vh;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .skillCard {
+    min-height: max-content;
+    width: 100%;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10rem;
+  }
+  .swiper-wrapper {
+    height: 35rem;
+  }
+  .skillCard__carousel-item-1 {
+    position: relative;
+    top: 0;
+  }
+  .skillCard__carousel-item-2 {
+    position: relative;
+    top: -4rem;
+  }
+  .skillCard__carousel-item-3 {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .skillCard {
+    position: absolute;
+    top: 10rem;
+  }
+  .skillCard__carousel-item-1 {
+    position: relative;
+    top: 0;
+  }
+  .skillCard__carousel-item-2 {
+    position: relative;
+    top: -4rem;
+  }
+  .skillCard__carousel-item-3 {
+    position: relative;
+    top: 0;
+  }
+  .swiper-wrapper {
+    height: 40rem;
+  }
+  .skillCard__carousel-item-1 {
+    width: 18rem;
+    height: 28rem;
+    border-radius: 110px 30px 30px 30px;
+  }
+  .skillCard__more-title {
+    font-size: 1rem;
+  }
+  .logo-react {
+    width: 4rem;
+  }
+  .skillCard__less-title {
+    font-size: 1rem;
+  }
+  /* card 2 */
+  .skillCard__carousel-item-2 {
+    width: 18rem;
+    height: 28rem;
+    border-radius: 30px;
+  }
+  .skillCard__lenMore-title {
+    font-size: 1.2rem;
+  }
+  .skillCard__lenMore-logo {
+    width: 3rem;
+  }
+  .logo-html {
+    width: 4.5rem;
+    margin-top: -0.2rem;
+  }
+  .skillCard__lenMore-itemTitle {
+    text-shadow: 0px 5px 9px rgba(0, 0, 0, 0.559);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  /* card 3 */
+  .skillCard__carousel-item-3 {
+    width: 18rem;
+    height: 28rem;
+    border-radius: 30px 110px 30px 30px;
+  }
+  .skillCard__hability-title {
+    font-size: 1rem;
+  }
+  .skillCard__hability-list {
+    height: 17rem;
+  }
+  .skillCard__hability-item {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .skillCard {
+    position: absolute;
+    top: 10rem;
+  }
+  .skillCard__carousel-item-1 {
+    position: relative;
+    top: 0;
+  }
+  .skillCard__carousel-item-2 {
+    position: relative;
+    top: -4rem;
+  }
+  .skillCard__carousel-item-3 {
+    position: relative;
+    top: 0;
+  }
+  .swiper-wrapper {
+    height: 40rem;
+    width: 80rem;
+  }
+
+  /* card 2 */
+  .skillCard__carousel-item-1 {
+    width: 18rem;
+    height: 28rem;
+    border-radius: 110px 30px 30px 30px;
+  }
+  .skillCard__more-title {
+    font-size: 1rem;
+  }
+  .logo-react {
+    width: 4rem;
+  }
+  .skillCard__less-title {
+    font-size: 1rem;
+  }
+  /* card 2 */
+  .skillCard__carousel-item-2 {
+    width: 18rem;
+    height: 28rem;
+    border-radius: 30px;
+  }
+  .skillCard__lenMore-title {
+    font-size: 1.2rem;
+  }
+  .skillCard__lenMore-logo {
+    width: 3rem;
+  }
+  .logo-html {
+    width: 4.5rem;
+    margin-top: -0.2rem;
+  }
+  .skillCard__lenMore-itemTitle {
+    text-shadow: 0px 5px 9px rgba(0, 0, 0, 0.559);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  /* card 3 */
+  .skillCard__carousel-item-3 {
+    width: 18rem;
+    height: 28rem;
+    border-radius: 30px 110px 30px 30px;
+  }
+  .skillCard__hability-title {
+    font-size: 1rem;
+  }
+  .skillCard__hability-list {
+    height: 17rem;
+  }
+  .skillCard__hability-item {
+    font-size: 0.9rem;
+  }
+}

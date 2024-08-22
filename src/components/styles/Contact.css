@@ -1,0 +1,98 @@
+.contact {
+  width: 100%;
+  min-height: 80vh;
+  background: url("/img/bg-mobile/bg-star.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+.contact__title {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: var(--typo-primary);
+  margin-bottom: 1rem;
+}
+.contact__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.contact__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.contact__input {
+  background-color: var(--color-bg-input);
+  width: 90%;
+  height: 2.5rem;
+  border-radius: 0.6rem;
+  padding: 0.2rem 0.5rem;
+  margin: 1rem 0;
+}
+.contact__input:focus {
+  outline: none;
+  border: 3px solid var(--color-header);
+}
+.contact__input::placeholder {
+  color: var(--color-black);
+}
+.contact__textArea {
+  height: 10rem;
+  padding: 1rem;
+}
+.contact__btn {
+  align-self: flex-end;
+  margin-right: 1rem;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: var(--color-red-btn);
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  transition: scale 0.2s ease-in-out;
+}
+.contact__btn:hover {
+  opacity: 1;
+  scale: 1.03;
+}
+.contact__error {
+  color: red;
+  font-size: 0.8rem;
+  position: absolute;
+  top: -0.5rem;
+}
+
+@media (min-width: 401px) and (max-width: 1200px) {
+  .contact__input {
+    max-width: 23rem;
+  }
+  .contact__btn {
+    align-self: center;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact__input {
+    max-width: 23rem;
+  }
+  .contact__btn {
+    align-self: center;
+    margin: 0;
+  }
+}
