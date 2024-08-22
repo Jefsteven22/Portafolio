@@ -42,7 +42,7 @@ export const allProjects = [
     id: 3,
   },
   {
-    title: "Wather app",
+    title: "Weather app",
     description: `Una app web que te muestra el estado del clima a tiempo real, dependiendo de tu hubicación geografica`,
     img: "/img/projects/clima-app.jpg",
     github: "https://github.com/Jefsteven22/weather-app.git",

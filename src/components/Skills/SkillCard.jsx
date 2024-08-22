@@ -1,7 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./style/SkillCard.css";
 import "swiper/css";
-import { Autoplay, EffectCoverflow } from "swiper/modules";
+import "swiper/css/pagination";
+
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 
 const SkillCard = () => {
   //! recuerda probar con las animaciones de las card el foco de la shadow para movimiento vertical y el cambio de scale aumentando la cantidad de sombra y blur
@@ -10,7 +12,7 @@ const SkillCard = () => {
     <section className="skillCard">
       <Swiper
         className="skillCard__carousel"
-        modules={[Autoplay, EffectCoverflow]}
+        modules={[Autoplay, EffectCoverflow, Pagination]}
         effect={"coverflow"}
         coverflowEffect={{
           rotate: 100,
@@ -28,9 +30,14 @@ const SkillCard = () => {
         spaceBetween={50}
         slidesPerView={1}
         loop={true}
+        pagination={{
+          clickable: true,
+          renderBullet: (index, className) => {
+            return `<span class="${className} custom-bullet"></span>`;
+          },
+        }}
         breakpoints={{
           768: {
-            // Desactiva el carrusel y muestra todos los slides
             slidesPerView: 3,
             spaceBetween: 10,
             effect: "slide",
