@@ -31,7 +31,7 @@ const HomeCarousel = () => {
               Desarrollador web Front-end
             </h1>
             <p className="homeCarousel__item-phrase">
-              Soy un pasionado de la programación, con experiencia en la
+              Soy un apasionado de la programación, con experiencia en la
               creación de aplicaciones web.
               <br />
               <br />
